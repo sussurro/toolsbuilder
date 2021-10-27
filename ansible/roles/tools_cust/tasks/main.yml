@@ -1,0 +1,34 @@
+---
+- name: Disable realtime monitoring
+  win_shell:  Set-MpPreference -DisableRealtimeMonitoring $true
+- name: Enable File sharing
+  win_shell:  netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+- name: Install 7zip
+  win_chocolatey: 
+    name: 7zip
+    state: latest
+- name: Copy Build Directory
+  win_copy:
+    src: files/Build
+    dest: c:\
+- name: Build tooling
+  win_shell: .\buildit.ps1
+  args:
+    chdir: C:\Build
+
+- name: Move build log to Binaries dir
+  win_copy:
+    src: C:\Build\Build.out
+    dest: C:\Build\Binaries\
+    remote_src: yes
+
+- name: archive tooling
+  win_shell: 7z.exe a Binaries.7z Binaries
+  args:
+    chdir: C:\Build
+- name: Download the 7zip file
+  fetch:
+    src: c:\Build\Binaries.7z
+    dest: ../Binaries.7z
+    flat: yes
+

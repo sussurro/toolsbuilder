@@ -1,0 +1,394 @@
+{
+    "settings":  {
+                     "VSDir":  "c:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools",
+                     "Categories" : [ "Escalation","Execution","Persistence", "Exploitation","Recon"]
+                 },
+    "repos":  [
+                  {
+                      "name":  "SharpWMI",
+                      "cat": "Execution",
+                      "git":  "https://github.com/GhostPack/SharpWMI",
+                      "bindir" : "SharpWMI\\bin\\Release",
+                      "Solution":  "SharpWMI.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpGPOAbuse",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/FSecureLABS/SharpGPOAbuse",
+                      "bindir": "SharpGPOAbuse\\obj\\Release",
+                      "Solution":  "SharpGPOAbuse.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharPersist",
+                      "cat": "Persistence",
+                      "git":  "https://github.com/fireeye/SharPersist",
+                      "Solution":  "SharPersist.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpStay",
+                      "cat": "Persistence",
+                      "git":  "https://github.com/0xthirteen/SharpStay",
+                      "Solution":  "SharpStay\\SharpStay.sln",
+                      "bindir": "SharpStay\\SharpStay\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpUp",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/GhostPack/SharpUp",
+                      "Solution":  "SharpUp.sln",
+                      "bindir": "SharpUp\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "Seatbelt",
+                      "cat": "Recon",
+                      "git":  "https://github.com/GhostPack/Seatbelt",
+                      "Solution":  "Seatbelt.sln",
+                      "bindir": "Seatbelt\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "Watson",
+                      "cat": "Recon",
+                      "git":  "https://github.com/rasta-mouse/Watson",
+                      "bindir": "Watson\\obj\\Release",
+                      "Solution":  "Watson.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "OffensiveCSharp",
+                      "cat": "Exploitation",
+                      "git":  "https://github.com/matterpreter/OffensiveCSharp/",
+                      "Solution":  "OffensiveCSharp.sln",
+                      "bindir": "bin",
+                      "Build":  "Release|anycpu"
+                  },
+                  {
+                      "name":  "SweetPotato",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/CCob/SweetPotato",
+                      "Solution":  "SweetPotato.sln",
+                      "bindir": "obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpCradle",
+                      "cat": "Execution",
+                      "git":  "https://github.com/anthemtotheego/SharpCradle",
+                      "Solution":  "SharpCradle.sln",
+                      "bindir": "SharpCradle\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "Internal-Monologue",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/eladshamir/Internal-Monologue",
+                      "Solution":  "InternalMonologue.sln",
+                      "bindir": "InternalMonologueExe\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "ATPMiniDump",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/b4rtik/ATPMiniDump",
+                      "Solution":  "ATPMiniDump.sln",
+                      "Build":  "Release|x64"
+                  },
+                  {
+                      "name":  "BlockEtw",
+                      "cat": "Execution",
+                      "git":  "https://github.com/Soledge/BlockEtw",
+                      "Solution":  "blocketw.sln",
+                      "bindir": "blocketw\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpEDRChecker",
+                      "cat": "Recon",
+                      "git":  "https://github.com/PwnDexter/SharpEDRChecker",
+                      "Solution":  "SharpEDRChecker.sln",
+                      "bindir": "SharpEDRChecker\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpBlock",
+                      "cat": "Execution",
+                      "git":  "https://github.com/CCob/SharpBlock",
+                      "bindir": "obj\\x64\\Release",
+                      "Solution":  "SharpBlock.sln",
+                      "Build":  "Release|x64"
+                  },
+                  {
+                      "name":  "DefenderCheck",
+                      "cat": "Recon",
+                      "git":  "https://github.com/matterpreter/DefenderCheck",
+                      "Solution":  "DefenderCheck\\DefenderCheck.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpLocker",
+                      "cat": "Recon",
+                      "git":  "https://github.com/Pickfordmatt/SharpLocker",
+                      "Solution":  "SharpLocker.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpDPAPI",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/GhostPack/SharpDPAPI",
+                      "bindir": "SharpDPAPI\\bin\\Release",
+                      "Solution":  "SharpDPAPI.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpDump",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/GhostPack/SharpDump",
+                      "Solution":  "SharpDump.sln",
+                      "bindir": "SharpDump\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpWeb",
+                      "cat": "Recon",
+                      "git":  "https://github.com/djhohnstein/SharpWeb",
+                      "Solution":  "SharpWeb.sln",
+                      "bindir": "bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpCookieMonster",
+                      "cat": "Recon",
+                      "git":  "https://github.com/m0rv4i/SharpCookieMonster",
+                      "Solution":  "SharpCookieMonster.sln",
+                      "bindir": "SharpCookieMonster\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SafetyKatz",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/GhostPack/SafetyKatz",
+                      "Solution":  "SafetyKatz.sln",
+                      "bindir": "SafetyKatz\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "Rubeus",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/GhostPack/Rubeus",
+                      "Solution":  "Rubeus.sln",
+                      "bindir": "Rubeus\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "RdpThief",
+                      "cat": "Recon",
+                      "git":  "https://github.com/0x09AL/RdpThief",
+                      "Solution":  "RdpThief.sln",
+                      "Build":  "Release|x64"
+                  },
+                  {
+                      "name":  "SharpSecDump",
+                      "cat": "Recon",
+                      "git":  "https://github.com/G0ldenGunSec/SharpSecDump",
+                      "Solution":  "SharpSecDump.sln",
+                      "bindir": "SharpSecDump\\bin\\x64\\Release",
+                      "Build":  "Release|x64"
+                  },
+                  {
+                      "name":  "SharpWifiGrabber",
+                      "cat": "Recon",
+                      "git":  "https://github.com/r3nhat/SharpWifiGrabber",
+                      "bindir": "SharpWifiGrabber\\bin\\Release",
+                      "Solution":  "SharpWifiGrabber.sln",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpHound3",
+                      "cat": "Recon",
+                      "git":  "https://github.com/BloodHoundAD/SharpHound3",
+                      "Solution":  "SharpHound3.sln",
+                      "bindir": "SharpHound3\\obj\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                 
+                  {
+                      "name":  "SharpDomainSpray",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/HunnicCyber/SharpDomainSpray",
+                      "Solution":  "SharpDomainSpray.sln",
+                      "bindir": "bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpSniper",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/HunnicCyber/SharpSniper",
+                      "Solution":  "SharpSniper.sln",
+                      "bindir": "bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpFruit",
+                      "cat": "Recon",
+                      "git":  "https://github.com/rvrsh3ll/SharpFruit",
+                      "Solution":  "SharpFruit.sln",
+                      "bindir": "SharpFruit\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpPrinter",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/rvrsh3ll/SharpPrinter",
+                      "Solution":  "SharpPrinter.sln",
+                      "bindir": "SharpPrinter\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpView",
+                      "cat": "Recon",
+                      "git":  "https://github.com/tevora-threat/SharpView",
+                      "Solution":  "SharpView.sln",
+                      "bindir": "SharpView\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpSearch",
+                      "cat": "Recon",
+                      "git":  "https://github.com/djhohnstein/SharpSearch",
+                      "Solution":  "SharpSearch.sln",
+                      "bindir": "bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpClipHistory",
+                      "cat": "Recon",
+                      "git":  "https://github.com/FSecureLABS/SharpClipHistory",
+                      "Solution":  "SharpClipHistory.sln",
+                      "bindir": "SharpClipHistory\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpClipboard",
+                      "cat": "Recon",
+                      "git":  "https://github.com/slyd0g/SharpClipboard",
+                      "Solution":  "SharpClipboard.sln",
+                      "bindir": "SharpClipboard\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpChromium",
+                      "cat": "Recon",
+                      "git":  "https://github.com/djhohnstein/SharpChromium",
+                      "Solution":  "SharpChromium.sln",
+                      "bindir": "bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "ADFSDump",
+                      "cat": "Recon",
+                      "git":  "https://github.com/fireeye/ADFSDump",
+                      "Solution":  "ADFSDump.sln",
+                      "bindir": "ADFSDump\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "InveighZero",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/Kevin-Robertson/InveighZero",
+                      "Solution":  "Inveigh.sln",
+                      "bindir": "Inveigh\\bin\\Release\\net45",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "Spray-AD",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/outflanknl/Spray-AD",
+                      "Solution":  "Src\\Spray-AD\\Spray-AD.sln",
+                      "Build":  "Release|x64"
+                  },
+                  {
+                      "name":  "Recon-AD",
+                      "cat": "Recon",
+                      "git":  "https://github.com/outflanknl/Recon-AD",
+                      "Solution":  "Src\\Recon-AD-Users\\Recon-AD-Users.sln",
+                      "Build":  "Release|x64"
+                  },
+                  {
+                      "name":  "Grouper2",
+                      "cat": "Recon",
+                      "git":  "https://github.com/l0ss/Grouper2",
+                      "Solution":  "Grouper2.sln",
+                      "bindir": "Grouper2\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpMapExec",
+                      "cat": "Execution",
+                      "git":  "https://github.com/cube0x0/SharpMapExec",
+                      "Solution":  "SharpMapExec.sln",
+                      "bindir": "SharpMapExec\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpCOM",
+                      "cat": "Execution",
+                      "git":  "https://github.com/rvrsh3ll/SharpCOM",
+                      "Solution":  "SharpCOM.sln",
+                      "bindir": "SharpCOM\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpExcel4-DCOM",
+                      "cat": "Execution",
+                      "git":  "https://github.com/rvrsh3ll/SharpExcel4-DCOM",
+                      "Solution":  "SharpExcel4-DCOM.sln",
+                      "bindir": "SharpExcel4-DCOM\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpExec",
+                      "cat": "Execution",
+                      "git":  "https://github.com/anthemtotheego/SharpExec",
+                      "Solution":  "SharpExec.sln",
+                      "bindir": "SharpExec\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpRDP",
+                      "cat": "Recon",
+                      "git":  "https://github.com/0xthirteen/SharpRDP",
+                      "Solution":  "SharpRDP\\SharpRDP.sln",
+                      "bindir": "SharpRDP\\SharpRDP\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpMove",
+                      "cat": "Escalation",
+                      "git":  "https://github.com/0xthirteen/SharpMove",
+                      "Solution":  "SharpMove\\SharpMove.sln",
+                      "bindir": "SharpMove\\SharpMove\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "SharpBox",
+                      "cat": "Execution",
+                      "git":  "https://github.com/P1CKLES/SharpBox",
+                      "Solution":  "SharpBox.sln",
+                      "bindir": "SharpBox\\bin\\Release",
+                      "Build":  "Release|Any CPU"
+                  },
+                  {
+                      "name":  "Zipper",
+                      "cat": "Execution",
+                      "git":  "https://github.com/outflanknl/Zipper",
+                      "Solution":  "Src\\Outflank-Zipper\\Outflank-Zipper.sln",
+                      "bindir": "Zipper",
+                      "Build":  "Release|x64"
+                  }
+              ]
+}

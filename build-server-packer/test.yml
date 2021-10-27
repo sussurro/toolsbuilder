@@ -1,0 +1,83 @@
+---
+- name: 'Provision Image'
+  hosts: default
+  become: yes
+  become_method: runas
+  become_user: System
+
+  tasks:
+  - name: Disable Windows Defender
+    win_regedit:
+      key: "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection"
+      value: DisableRealTimeMonitoring
+      datatype: dword
+      data: 1
+
+  - name : Disable Windows Firewall
+    win_firewall:
+       state: disabled
+
+  - name: Disable Telemetry
+    win_regedit:
+      path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+      name: AllowTelemetry
+      data: 0
+      type: dword
+
+  - name: Disable Telemetry 2
+    win_regedit:
+      path: HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection
+      name: AllowTelemetry
+      data: 0
+      type: dword
+
+  - name: Disable Telemetry 3
+    win_regedit:
+      path: HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+      name: AllowTelemetry
+      data: 0
+      type: dword
+
+  - name: Disable Telemetry Service
+    win_service:
+      name: diagnosticshub.standardcollector.service
+      start_mode: disabled
+      state: stopped
+
+  - name: Disable Diagnostics Service
+    win_service:
+      name: DiagTrack
+      start_mode: disabled
+      state: stopped
+
+  - name: Install git
+    win_chocolatey:
+      name: git
+      state: present
+
+  - name: Visual Studio
+    win_chocolatey:
+      name: visualstudio2019buildtools
+      state: present
+
+  - name: Reconfigure VS Tools
+    win_shell: .\setup.exe modify --config c:\vsconfig  --installpath ..\2019\BuildTools --installwhiledownloading -q | out-null
+    args:
+      chdir: c:\Program Files (x86)\Microsoft Visual Studio\Installer
+
+  - name: Install Nuget.CommandLine
+    win_chocolatey:
+      name: Nuget.CommandLine
+      state: present
+
+  - name: Install confuserex
+    win_chocolatey:
+      name: confuserex
+      state: present
+
+  - name: Install .Net 3.5
+    win_optional_feature:
+      name: NetFx3
+      state: present
+      include_parent: yes
+

@@ -1,0 +1,6 @@
+---
+- hosts: tools
+  gather_facts: yes
+  roles:
+    - tools_cust
+
